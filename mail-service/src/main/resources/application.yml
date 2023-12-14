@@ -1,0 +1,26 @@
+server:
+  port: 8086 # port at which the service will be available
+
+spring:
+  application:
+    name: mail-service
+
+info: # basic application info to be made available under /info
+  app:
+    name: mail-service
+    description: Service to submit mail
+    version: 1.0.0
+
+address:
+  service:
+    base-path: http://address-service/
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    healthcheck:
+      enabled: true

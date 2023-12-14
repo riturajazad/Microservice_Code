@@ -1,8 +1,8 @@
 # Start with a base image containing Java runtime
-FROM openjdk:8-jdk-alpine
+FROM openjdk:17-jdk
 
 # Add Maintainer Info
-LABEL maintainer="sanchi.goyal.sg@gmail.com"
+LABEL maintainer="rituraj.raj98@gmail.com"
 
 # Add a volume pointing to /tmp
 VOLUME /tmp
